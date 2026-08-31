@@ -1,0 +1,6 @@
+# ParityProbe has ZERO runtime third-party dependencies.
+# It runs on the Python 3.9+ standard library alone (urllib, html.parser,
+# difflib, ssl, gzip, concurrent.futures, json ...).
+#
+# This file exists so conventional CI pipelines find a requirements file.
+# To install the CLI instead, use:  pip install .

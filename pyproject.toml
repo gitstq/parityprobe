@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parityprobe"
+version = "1.0.0"
+description = "Audit whether a URL serves equal content to human browsers and AI/search crawlers — zero-dependency, offline, CLI + library."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "gitstq" }]
+keywords = [
+    "ai-crawler", "gptbot", "claudebot", "cloaking", "content-parity",
+    "seo-audit", "llm-seo", "web-audit", "zero-dependency", "cli",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Internet :: WWW/HTTP :: Site Management :: Link Checking",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = []
+
+[project.scripts]
+parityprobe = "parityprobe.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/gitstq/parityprobe"
+Issues = "https://github.com/gitstq/parityprobe/issues"
+Changelog = "https://github.com/gitstq/parityprobe/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+parityprobe = ["py.typed"]
