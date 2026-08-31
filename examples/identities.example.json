@@ -1,0 +1,25 @@
+{
+  "identities": [
+    {
+      "key": "internal-monitor",
+      "label": "Internal uptime monitor",
+      "kind": "tool",
+      "user_agent": "AcmeMonitor/3.1 (+https://example.com/monitor)",
+      "accept": "*/*",
+      "accept_language": "",
+      "extra_headers": {
+        "Authorization": "Bearer replace-me"
+      },
+      "note": "Custom identities can carry any extra headers."
+    },
+    {
+      "key": "android-chrome",
+      "label": "Chrome on Android (mobile human)",
+      "kind": "human",
+      "user_agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36",
+      "sec_ch_ua": "\"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\", \"Not-A.Brand\";v=\"8\"",
+      "sec_ch_ua_mobile": "?1",
+      "sec_ch_ua_platform": "\"Android\""
+    }
+  ]
+}

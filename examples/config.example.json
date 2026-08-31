@@ -1,0 +1,20 @@
+{
+  "baseline": "chrome",
+  "identities": ["chrome", "googlebot", "gptbot", "claudebot", "bytespider", "perplexitybot"],
+  "timeout": 15,
+  "follow_redirects": true,
+  "verify_tls": true,
+  "fail_under": 0.8,
+  "format": "text",
+  "noise_filters": [
+    "req-[0-9a-f]{8,}",
+    "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z",
+    "csrf=[A-Za-z0-9._-]+"
+  ],
+  "thresholds": {
+    "identical": 0.999,
+    "near": 0.985,
+    "divergent": 0.8
+  },
+  "custom_identities_file": "examples/identities.example.json"
+}
